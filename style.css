@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px;
+  border-color: black;
+}
+.done-button {
+  background-color: lightgreen;
+  padding: 4px;
+  width: 20px;
+}
+.delete-button {
+  background-color: red;
+  padding: 4px;
+  width: 20px;
+}
+
+.h-72 {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.delete-button {
+  margin-right: 10px;
+  margin-top: 16px;
+}
+.new-todo {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 320px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: larger;
+}
+@media (max-width: 400px) {
+  .new-todo {
+    width: 275px;
+  }
+}
