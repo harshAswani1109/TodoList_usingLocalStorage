@@ -18,7 +18,19 @@
 .delete-button {
   background-color: red;
   padding: 4px;
-  width: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+.delete-button:hover {
+  width: 34px;
+  height: 34px;
+  border-radius: 24px;
+}
+.delete-button:active {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
 }
 
 .h-72 {
@@ -28,6 +40,7 @@
 .delete-button {
   margin-right: 10px;
   margin-top: 16px;
+  color: aliceblue;
 }
 .new-todo {
   padding-left: 10px;
@@ -39,8 +52,13 @@
   justify-items: center;
   font-size: larger;
 }
+.new-todo:hover {
+  font-size: x-large;
+  font: bold;
+}
+
 @media (max-width: 400px) {
   .new-todo {
-    width: 275px;
+    width: 260px;
   }
 }

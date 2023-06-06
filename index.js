@@ -1,43 +1,49 @@
-const todos = document.querySelector(".todo-list");
-const todoInput = document.querySelector(".todo-input");
-const todoButton = document.querySelector(".todo-button");
-todos.addEventListener("click", deleteDoneEvent);
-todoButton.addEventListener("click", addEvent);
+// const todos = document.querySelector(".todo-list");
+// const todoInput = document.querySelector(".todo-input");
+// const todoButton = document.querySelector(".todo-button");
 
-function addEvent(event) {
-  event.preventDefault();
-  console.log("working");
-  const todosDiv = document.createElement("div");
-  todosDiv.classList.add("todo-div");
+// // let key = todoInput;
+// // let value = todoButton;
+// // localStorage.setItem(key, value);
+// // console.log(`Age of ${key} is ${localStorage.getItem(key)}`);
 
-  const newTodos = document.createElement("li");
-  newTodos.innerText = todoInput.value;
-  newTodos.classList.add("new-todo");
-  todosDiv.appendChild(newTodos);
+// todos.addEventListener("click", deleteDoneEvent);
+// todoButton.addEventListener("click", addEvent);
 
-  // const doneButton = document.createElement("button");
-  // doneButton.innerText = "+";
-  // doneButton.classList.add("done-button");
-  // todosDiv.appendChild(doneButton);
+// function addEvent(event) {
+//   event.preventDefault();
+//   console.log("working");
+//   const todosDiv = document.createElement("div");
+//   todosDiv.classList.add("todo-div");
 
-  const deleteButton = document.createElement("button");
-  deleteButton.innerText = "X";
-  deleteButton.classList.add("delete-button");
-  todosDiv.appendChild(deleteButton);
+//   const newTodos = document.createElement("li");
+//   newTodos.innerText = todoInput.value;
+//   newTodos.classList.add("new-todo");
+//   todosDiv.appendChild(newTodos);
 
-  todos.appendChild(todosDiv);
-  todoInput.value = "";
-}
+//   // const doneButton = document.createElement("button");
+//   // doneButton.innerText = "+";
+//   // doneButton.classList.add("done-button");
+//   // todosDiv.appendChild(doneButton);
 
-function deleteDoneEvent(event) {
-  const item = event.target;
-  console.log(item);
-  if (item.classList[0] === "delete-button") {
-    const todo = item.parentElement;
-    todo.remove();
-  }
-  // if (item.classList[0] === "done-button") {
-  //   const todo = item.parentElement;
-  //   todo.classList.toggle("completed");
-  // }
-}
+//   const deleteButton = document.createElement("button");
+//   deleteButton.innerText = "X";
+//   deleteButton.classList.add("delete-button");
+//   todosDiv.appendChild(deleteButton);
+
+//   todos.appendChild(todosDiv);
+//   todoInput.value = "";
+// }
+
+// function deleteDoneEvent(event) {
+//   const item = event.target;
+//   console.log(item);
+//   if (item.classList[0] === "delete-button") {
+//     const todo = item.parentElement;
+//     todo.remove();
+//   }
+//   // if (item.classList[0] === "done-button") {
+//   //   const todo = item.parentElement;
+//   //   todo.classList.toggle("completed");
+//   // }
+// }
